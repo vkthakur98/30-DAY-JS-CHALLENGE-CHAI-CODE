@@ -58,5 +58,5 @@ console.log(userid || pwd)
 // Taks 13
 console.log(!pwd)
 
-// // Task 1
+// Task 15
 40>20?console.log("True"):console.log("False");
