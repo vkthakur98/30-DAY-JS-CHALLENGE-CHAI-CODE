@@ -124,7 +124,7 @@ function highOnCode(fn,not)
 let sout = highOnCode(func,5)
 console.log(sout);
 
-//Task 10
+// Task 10
 
 function highOnCode2(fn1,fn2,num)
 {
@@ -135,3 +135,4 @@ function highOnCode2(fn1,fn2,num)
 
 let result = highOnCode2(funca,funcb,5)
 console.log(result)
+
