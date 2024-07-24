@@ -68,7 +68,7 @@ const getData2 = async ()=>{
     }
     catch(e)
     {
-        console.log(e)
+        console.log("Rejected by the server",e)
     }      
 }
 getData2()
@@ -108,14 +108,14 @@ Promise.all([Prom1, Prom2, Prom3]).then((values) => {
 
 //Task 9
 const p1 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 800, 'p1 is resolved');
+    setTimeout(resolve, 4000, 'p1 is resolved');
   })
   
   const p2 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 200, 'p2 is resolved');
+    setTimeout(resolve, 2000, 'p2 is resolved');
   });
   
-  Promise.race([p1,p1]).then((value) => {
+  Promise.race([p1,p2]).then((value) => {
     console.log(value);
       });
     
