@@ -100,3 +100,15 @@ search_btn.addEventListener("click",()=>{
         getTemperatureByCity(search_key.value)
     console.log("Please input a city")     
 })
+
+
+
+search_key.addEventListener("keyup",(e)=>{
+    if(e.keyCode == 13)
+    {
+        if(search_key.value!=="")
+            getTemperatureByCity(search_key.value)
+        console.log("Please input a city")
+    }
+    
+})
