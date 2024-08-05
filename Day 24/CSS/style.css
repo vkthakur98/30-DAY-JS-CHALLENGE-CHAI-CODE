@@ -1,0 +1,111 @@
+body{
+    /* background-image: url("https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-size:cover
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header h1{
+    font-family: cooper;
+    padding: 10px;
+    color: white;
+}
+
+.weather-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-details span
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.weather-sub-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border:1px solid white;
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    background-color: rgba(0,0,0, .5);
+}
+
+.search-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-div button
+{
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border-radius:0px 10px 10px 0px;
+    border:1px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-div input{
+    padding: 10px;
+    border-radius:10px 0px 0px 10px;
+    border:1px solid transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.forecast-main h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.forcast-div-contain{
+    display: flex;
+    justify-content: center;
+}
+
+.forcast-div-contain div{
+    height: 120px;
+    width: 86px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.div-super
+{
+    padding: 15px;
+}
+
+.div-sub
+{
+    background-color: rgba(0,0,0,.5);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#tempHTML{
+    font-size: 25px;
+}
+
+.img-icon
+{
+    width: 70px;
+    height: 70px;
+}
