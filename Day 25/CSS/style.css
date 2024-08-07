@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9), rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://wallpapers.com/images/high/movie-poster-background-q1zm830g0hfww2lk.webp");
+    height: 100vh;
+}
+
+
+.head
+{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+h1{
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+h2{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+.searched-movie-overlay
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.5);
+}
+.searched-movie
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation:size .3s;
+}
+
+
+.movie-card img{
+    border-radius: 5px;
+}
+.movie-card img:hover
+{
+        transform: scale(1.2);
+        cursor: pointer;
+        transition: .5s;
+}
+
+@keyframes size {
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+.searched-movie img{
+    border-radius: 10px 0px 0px 10px;
+    border-top:1px solid white;
+    border-left:1px solid white;
+    border-right:0px solid white;
+    border-bottom:1px solid white;
+    height: 430px;
+}
+
+.movie-details{
+    background-color: #262626;
+    height: 430px;
+    width: 500px;
+    border-radius: 0px 10px 10px 0px;
+    border-top:1px solid white;
+    border-left:0px solid white;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+}
+.movie-details div
+{
+    padding: 10px;
+    color:white;
+}
+
+.movie-details span{
+    color:gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.movie-details p{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.movie-details-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-movies-div
+{
+    padding: 10px;
+}
+.popular-movies
+{
+    width: 180px;
+    height: 270px;
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    backdrop-filter:blur(5px);
+}
+
+.movie-search-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.movie-search-body input
+{
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    border:1px solid white;
+    width:300px;
+    font-size:14px;
+    color:white;
+}
+
+.movie-search-body button
+{
+    padding: 9px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border:1px solid red;
+    font-size:20px;
+    margin-left:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+
+
+.movie-search-body input::placeholder
+{
+    color:white;
+}
+
+.movie-title
+{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.App-Tagline
+{
+    display: flex;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.more-btn
+{
+    padding: 5px;
+    font-size: 15px;
+    background-color: red;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    width:175px;
+    cursor: pointer;
+}
