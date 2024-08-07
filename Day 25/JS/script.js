@@ -30,7 +30,7 @@ function findMovie(title)
     let arr = []
     try
     {
-    fetch(`http://www.omdbapi.com/?t=${title}&apikey=${API}`)
+    fetch(`https://www.omdbapi.com/?t=${title}&apikey=${API}`)
     .then((resp) =>{
         return resp.json()
     })
@@ -60,7 +60,7 @@ for(let i =0; i<movies.length; i++)
 function searchMovie(title)
 {
     try{
-        fetch(`http://www.omdbapi.com/?t=${title}&apikey=${API}`)
+        fetch(`https://www.omdbapi.com/?t=${title}&apikey=${API}`)
         .then(resp => resp.json())
         .then((resp)=>{
             document.querySelector(".popular").innerHTML = null;
