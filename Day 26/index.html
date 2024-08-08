@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="msg">Chat App</p>
+        <div id="messages" class="messages"></div>
+        <div class="user">
+            <input placeholder="Enter your username" id="username"/>
+            <button id="sub_btn">Submit</button>
+        </div>
+        <form id="msgForm" class="msgForm">
+            <input type="text" placeholder="Send message" class="input" id="inputBox" />
+            <input type="submit" class="btn" value="Send">
+        </form>
+    </div>
+    <script type="text/javascript">
+        let username;
+        sub_btn.addEventListener("click",()=>{
+            username = document.getElementById("username").value;
+            document.querySelector('.user').style.display="none"
+            msgForm.style.display= "flex"
+            console.log(username)
+        })
+        const ws = new WebSocket(`ws://127.0.0.1:8080`);
+        ws.binaryType = "blob";
+        // Log socket opening and closing
+        ws.addEventListener("open", event => {
+            console.log("Websocket connection opened");
+        });
+        ws.addEventListener("close", event => {
+            console.log("Websocket connection closed");
+        });
+        ws.onmessage = function (message) {
+            const msgDiv = document.createElement('div');
+            const user = document.createElement("div")
+            user.classList.add("user")
+            const msg = document.createElement("div")
+            msg.classList.add('msgCtn');
+            if (message.data instanceof Blob) {
+                reader = new FileReader();
+                reader.onload = () => {
+                    // msgDiv.innerHTML = reader.result;
+                    let data = reader.result.split(",")
+                    user.innerHTML = data[0]
+                    msg.innerHTML = data[1] 
+                    msgDiv.appendChild(user)
+                    msgDiv.appendChild(msg)
+                    document.getElementById('messages').appendChild(msgDiv);
+                };
+                reader.readAsText(message.data);
+            } else {
+                console.log("Result2: " + message.data);
+                msgDiv.innerHTML = message.data;
+                document.getElementById('messages').appendChild(msgDiv);
+            }
+        }
+        const form = document.getElementById('msgForm');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const message = document.getElementById('inputBox').value;
+            let arr = []
+            arr.push(username)
+            arr.push(message)
+            ws.send(arr);
+            document.getElementById('inputBox').value = ''
+        })
+    </script>
+</body>
+
+</html>

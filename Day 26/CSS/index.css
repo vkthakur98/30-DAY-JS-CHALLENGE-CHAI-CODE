@@ -1,0 +1,89 @@
+html{
+    font-size: 62.5%;
+    }
+    body{
+    margin:0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+    }
+    .container{
+    margin-top: 5rem;
+    display:flex;
+    flex-direction:column;
+    width: 30%;
+    height: 70vh;
+    }
+    .msg{
+    color:white;
+    font-size: 2rem;
+    background-color:firebrick ;
+    padding: 10px;
+    border-radius: 10px;
+    }
+    .msgCtn{
+    margin: 1rem 0;
+    color: white;
+    padding: 1rem 1rem;
+    background-color: brown;
+    border-radius: 6px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    }
+    .msgForm{
+    display:none;
+    flex-direction:row;
+    }
+    .input{
+    height: 100%;
+    flex: 4;
+    margin-right: 2rem;
+    border:none;
+    border-radius: .5rem;
+    padding: 2px 1rem;
+    font-size: 1.5rem;
+    background-color:aliceblue;
+    }
+    .input:focus{
+    background-color:white;
+    }
+    .btn{
+    height:5rem;
+    flex: 1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: .5rem;
+    background-color:cornflowerblue;
+    color: whitesmoke;
+    border:none;
+    font-size: 1.6rem;
+    }
+
+    .user
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        color:blue;
+    }
+
+    .user input{
+        margin-right: 2rem;
+        border:none;
+        border-radius: .5rem;
+        padding: 10px;
+        font-size: 1.5rem;
+        background-color:aliceblue;   
+    }
+
+    .user button
+    {
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        background-color: olivedrab;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
