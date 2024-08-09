@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container2 h1{
+    color: white;
+}
+
+
+h1, h2 {
+    color: #333;
+}
+
+.checkout-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    flex: 1 1 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="tel"], 
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #179BAE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.place-order-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "product_name":"Volini spray",
+        "product_price":"₹70.00",
+        "product_image":"https://www.onebharatpharmacy.com/uploads/product/main/1621856876_5871_0.jpg"
+    },
+    {
+        "product_name":"Protinex chocolate flavour",
+        "product_price":"₹750.00",
+        "product_image":"https://cdn.zeptonow.com/production///tr:w-600,ar-819-819,pr-true,f-auto,q-80/cms/product_variant/39ffbfb3-fc6a-4f3a-87c6-5ebc882fa82f.jpeg"
+    },
+    {
+        "product_name":"Cetaphil cleanser",
+        "product_price":"₹399.00",
+        "product_image":"https://img.drz.lazcdn.com/static/bd/p/31c4f3a60291e8ca61ced7ed00e9a614.jpg_720x720q80.jpg_.webp"
+    }
+    ,
+    {
+        "product_name":"Garnier men's facewash",
+        "product_price":"₹210.00",
+        "product_image":"https://www.garnier.in/-/media/project/loreal/brand-sites/garnier/apac/in/products/garnier-men/acno-fight/anti-pimple-face-wash/common-images/zo-04.jpg?w=1200&rev=c64251f8ab8a49aab747e31c4b7bf784&hash=FC52ED5A37E324E04ED5E86BD2F9C8E7"
+    }
+    ,
+    {
+        "product_name":"Horlicks chocolate flavour",
+        "product_price":"₹687.00",
+        "product_image":"https://m.media-amazon.com/images/I/71mDEAWXxoL.jpg"
+    },
+    {
+        "product_name":"Volini spray",
+        "product_price":"₹70.00",
+        "product_image":"https://www.onebharatpharmacy.com/uploads/product/main/1621856876_5871_0.jpg"
+    },
+    {
+        "product_name":"Cetaphil cleanser",
+        "product_price":"₹399.00",
+        "product_image":"https://img.drz.lazcdn.com/static/bd/p/31c4f3a60291e8ca61ced7ed00e9a614.jpg_720x720q80.jpg_.webp"
+    }
+    ,
+    {
+        "product_name":"Garnier men's facewash",
+        "product_price":"₹210.00",
+        "product_image":"https://www.garnier.in/-/media/project/loreal/brand-sites/garnier/apac/in/products/garnier-men/acno-fight/anti-pimple-face-wash/common-images/zo-04.jpg?w=1200&rev=c64251f8ab8a49aab747e31c4b7bf784&hash=FC52ED5A37E324E04ED5E86BD2F9C8E7"
+    }
+]

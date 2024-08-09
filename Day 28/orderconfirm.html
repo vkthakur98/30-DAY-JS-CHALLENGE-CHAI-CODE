@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/confirmed.css">
+</head>
+<body>
+    <header>
+        <div class="container2">
+            <div class="logo">
+                <h1>E-Pharmacy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="container">
+    <!-- Order Confirmation Message -->
+    <div class="confirmation-message">
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been confirmed and will be processed soon.</p>
+        <p>Order Number: <strong>#123456789</strong></p>
+    </div>
+
+    <!-- Shipping Information -->
+    <section class="shipping-info">
+        <h2>Shipping Information</h2>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Address:</strong> <span id="add1"></span>,<span id="city"></span>,<span id="state"></span>,<span id="country"></span>,<span id="pin"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+    </section>
+
+    <!-- Order Summary -->
+    <section class="order-summary">
+        <h2>Order Summary</h2>
+        <div id="product_summary">
+            <!-- <div class="summary-item">
+                <p>Product 1</p>
+                <p>$49.99</p>
+            </div> -->
+        </div>
+        <div class="summary-total">
+            <p><strong>Total:</strong></p>
+            <p><strong>₹<span id="c_total"></span></strong></p>
+        </div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="additional-info">
+        <h2>What's Next?</h2>
+        <p>You will receive a confirmation email shortly. You can track your order using the order number provided above.</p>
+        <p>If you have any questions, please contact our customer support.</p>
+    </section>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-home-btn">Back to Home</a>
+</div>
+<script type="module">
+import products from "../products.json" with { type: "json" }
+let local_cart_products = localStorage.getItem("cart_items")
+let cart_products = JSON.parse(local_cart_products)
+let amt = localStorage.getItem("total")
+c_total.innerHTML = amt
+for(let i = 0; i<cart_products.length; i++)
+{
+    let div = document.createElement("div")
+    div.classList.add("summary-item")
+    let p1 = document.createElement("p")
+    let p2 = document.createElement("p")
+    p1.innerHTML = cart_products[i].p_name;
+    p2.innerHTML = cart_products[i].p_price; 
+    div.appendChild(p1)
+    div.appendChild(p2)   
+    product_summary.appendChild(div)
+}
+
+document.getElementById("name").innerHTML = localStorage.getItem("name")
+add1.innerHTML = localStorage.getItem("add1")
+city.innerHTML = localStorage.getItem("city")
+state.innerHTML = localStorage.getItem("state")
+country.innerHTML = localStorage.getItem("country")
+pin.innerHTML = localStorage.getItem("pin")
+phone.innerHTML = localStorage.getItem("phone")
+email.innerHTML = localStorage.getItem("email")
+
+</script>
+</body>
+</html>
