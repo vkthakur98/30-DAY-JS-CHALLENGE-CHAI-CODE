@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.todo-head{
+    padding: 15px;
+    background-color: #179BAE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-head span
+{
+    font-size: 20px;
+}
+
+.todo-head i{
+    cursor: pointer;
+}
+
+.task-div
+{
+    padding: 10px 0px 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.task-div-head
+{
+    padding: 10px 0px 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.task-div:nth-child(even)
+{
+    background-color: rgb(202, 190, 220);
+}
+
+.task-div span
+{
+    text-align: left;
+    width:300px;
+}
+.task-div-head span
+{
+    text-align: left;
+    width:300px;
+}
+
+.task-div-head
+{
+    padding: 10px 0px 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.task-div span
+{
+    padding: 5px 10px 5px 10px;
+}
+
+
+.add-task-btn
+{
+    cursor: pointer;
+    padding: 10px;
+    background-color:rgb(89, 32, 181);
+    border-radius: 5px;
+    color:white;
+    border-radius: 50%;
+    width:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-btn:hover
+{
+    background-color: white;
+    color:blueviolet;
+}
+
+#new-added-task h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:200px;
+}
+
+.add-new-task-overlay
+{
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-new-task
+{
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    animation:scaleup .3s linear;
+}
+
+@keyframes scaleup {
+        0%
+        {
+            transform: scale(0);
+        }
+        60%
+        {
+            transform: scale(1.2);
+        }
+        100%
+        {
+            transform: scale(1);
+        }
+}
+
+.add-new-task-head
+{
+    background-color: #179BAE;
+    padding: 10px;
+    color: white;
+    border-radius:10px 10px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.add-new-task-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-new-task-body input
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    width:450px;
+    border:none;
+    background-color: #97ced6;
+    color:purple;
+}
+
+.add-new-task-body input::placeholder
+{
+    color:black
+}
+
+.add-new-task-body input:focus
+{
+    outline: 2px solid rgb(220, 40, 220);
+}
+
+
+
+.add-new-task-body button
+{
+    width: 470px;
+    background-color: rgb(16, 65, 85);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.btn-edit
+{
+    cursor: pointer;
+    background-color: #FF8343;
+    color:white;
+    padding: 10px;
+    border:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+
+.delete-btn
+{
+    background-color: rgb(172, 59, 209);
+    color:white;
+    padding: 10px;
+    border:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.done-btn
+{
+    background-color: #4158A6;
+    color:white;
+    padding: 10px;
+    border:none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.head-confirm
+{
+       background-color: #4158A6;
+    padding: 10px;
+    border-radius: 5px 5px  0px 0px;
+    color:white;
+    width:300px;
+}
+
+.confirm_delete
+{
+    border-radius: 5px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation:scaleup .3s linear;
+
+}
+
+.confirm_delete_overlay
+{
+    background-color: rgba(0,0,0,.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-btn{
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.confirm-delete-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.cancel-btn
+{
+    background-color: #4158A6;
+    color:white;
+    cursor: pointer;
+}
+
+.del-btn
+{
+    border:2px solid red;
+    color:red;
+    background-color: white;
+}

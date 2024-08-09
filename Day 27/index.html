@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+        <div class="todo-main">
+            <div class="todo-head">
+                <span><i class="fa-solid fa-list-check" style="margin-right: 5px;"></i>Task Manager</span><span  class="add-task-btn"><i class="fa fa-plus"></i></span>
+            </div>
+            <div class="all-tasks">
+                <div class="task-div">
+                    <span style="font-weight: bold;">S.no</span>
+                    <span style="font-weight: bold;">Title</span>
+                    <span style="font-weight: bold;">Description</span>
+                    <span style="font-weight: bold;">Due Date</span>
+                    <span style="font-weight: bold;">Edit</span>
+                    <span style="font-weight: bold;">Delete</span>
+                    <span style="font-weight: bold;">Done</span>
+                </div>
+                <div id="new-added-task">
+                    <h1>No task added yet</h1>
+                </div>
+            </div>
+            <div class="add-new-task-overlay">
+                <div class="add-new-task">
+                    <div class="add-new-task-head">Add a new task</div>
+                    <div class="add-new-task-body">
+                        <form id="form"><br>
+                            <input type="text" id="task_title" placeholder="Enter task title"><br><br>
+                            <input type="text" id="task_desc" placeholder="Enter task description"><br><br>
+                            <input type="date" id="task_date" placeholder="Enter task title"><br><br>
+                            <button>Add to list&nbsp;<i class="fa fa-arrow-right"></i></button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-new-task-overlay">
+                <div class="add-new-task">
+                    <div class="add-new-task-head">Update a task</div>
+                    <div class="add-new-task-body">
+                        <form id="form_u"><br>
+                            <input type="hidden" id="idno_u">
+                            <input type="text" id="task_title_u" placeholder="Enter task title"><br><br>
+                            <input type="text" id="task_desc_u" placeholder="Enter task description"><br><br>
+                            <input type="date" id="task_date_u" placeholder="Enter task title"><br><br>
+                            <button>Update&nbsp;<i class="fa fa-arrow-right"></i></button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="confirm_delete_overlay">
+            <div class="confirm_delete">
+                <div class="head-confirm">
+                    <span>Delete</span>
+                </div>
+                <div>
+                    <span style="padding: 10px;font-size: 15px;;">Do you really want to continue?</span>
+                </div><br>
+                <div class="confirm-delete-buttons">
+                    <button class="cancel-btn confirm-btn">Cancel</button><button class="del-btn confirm-btn">Delete</button>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <script src="https://kit.fontawesome.com/952d9cc6d5.js" crossorigin="anonymous"></script>
+        <script src="./JS/script.js"></script>
+</body>
+</html>
