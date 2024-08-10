@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakebook-Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/signin.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fakebook</h1>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa-solid fa-users-gear"></i></a>
+            <a href="#"><i class="fa fa-sms"></i></a>
+            <a href="#"><i class="fa fa-user"></i></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Fakebook">
+        </div>
+    </header>
+    <div class="main-div">
+    <div class="background">
+        <div class="container">
+            <div class="sign-in-box">
+                <h2>Welcome Back!</h2>
+                <p>Please sign in to your account</p>
+                <form action="#" id="signin_form">
+                    <div class="input-group">
+                        <label for="email">Username</label>
+                        <input type="text" id="email" name="email" placeholder="Your username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Your password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign In</button>
+                    <div class="links">
+                        <a href="#">Forgot Password?</a>
+                        <a href="#">Create an Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./JS/signin.js"></script>
+    <script src="https://kit.fontawesome.com/952d9cc6d5.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakebook</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fakebook</h1>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa-solid fa-users-gear"></i></a>
+            <a href="#"><i class="fa fa-sms"></i></a>
+            <a href="#"><i class="fa fa-user"></i></a>
+                   </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Facebook">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#"><i style="margin-right: 10px;" class="fa fa-user"></i>Profile</a></li>
+                <li><a href="#"><i style="margin-right: 10px;" class="fa-solid fa-user-group"></i>Friends</a></li>
+                <li><a href="#"><i style="margin-right: 10px;" class="fa fa-users-gear"></i>Groups</a></li>
+                <li><a href="#"><i style="margin-right: 10px;" class="fa fa-calendar"></i>Events</a></li>
+                <li><a href="#"><i style="margin-right: 10px;" class="fa-solid fa-video"></i>Watch</a></li>
+            </ul>
+        </aside>
+
+        <main class="feed">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <section class="status-update">
+                    <textarea placeholder="What's on your mind?"></textarea>
+                </section>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <section class="posts">
+                    <div class="post">
+                        <div class="post-add">
+                            <div>
+                                <span>Vivek Kumar</span><br>
+                            </div>
+                            <div>
+                                <span>02:20 pm</span>
+                            </div>
+                        </div>
+                        <img  src="https://w0.peakpx.com/wallpaper/426/919/HD-wallpaper-vertical-stars-dark-sky-reflection.jpg" alt="">
+                        <div class="post-actions">
+                            <div><button>Like<i style="margin-left:5px;" class="fa fa-thumbs-up"></i></button></div><div><button>Comment<i style="margin-left:5px;"  class="fa fa-comment"></i></button></div><div><button>Share<i style="margin-left:5px;"  class="fa fa-share"></i></button></div>
+                        </div>
+                    </div>                
+                </section>
+            </div>
+        </main>
+
+        <aside class="friends-list">
+            <h2>Friends</h2>
+            <ul>
+                <li><i style="margin-right: 10px;" class="fa-solid fa-user-group"></i>Friend 1</li>
+                <li><i style="margin-right: 10px;" class="fa-solid fa-user-group"></i>Friend 2</li>
+                <li><i style="margin-right: 10px;" class="fa-solid fa-user-group"></i>Friend 3</li>
+                <li><i style="margin-right: 10px;" class="fa-solid fa-user-group"></i>Friend 4</li>
+            </ul>
+        </aside>
+    </div>
+    <div class="create-post-overlay">
+        <div class="create-post">
+            <div class="create-post-head">
+                Create Post
+            </div>
+            <div class="create-post-body">
+                <h3 id="username">Vivek Kumar</h3>
+                <input type="text" id="post_caption" placeholder="Enter some caption here" /><br><br>
+                <div class="image-upload">
+                    <div class="image-upload-div">
+                        <div class="image-upload-file">
+                            
+                        </div><br>
+                        <div class="image-upload-file">
+                            <input type="file" id="image">
+                        </div>
+                    </div>
+                </div><br>
+                <div class="create-post-btn">
+                    <button id="post_btn">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="create-post-overlay">
+        <div class="comment-section">
+            <img id="comment_img" height="600" width="450">
+            <div class="comments">
+                <div>
+                    <h3 style="margin-left: 10px;">Comments:</h3>
+                    <div class="comments_data">    
+                </div>
+                    
+                </div>
+                <div style="padding: 10px;">
+                <div class="add-comment">
+                    <input type="text" id="comment" placeholder="your comment"><button id="comment_btn" c_count="" >Comment</button>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/952d9cc6d5.js" crossorigin="anonymous"></script>
+</body>
+</html>
