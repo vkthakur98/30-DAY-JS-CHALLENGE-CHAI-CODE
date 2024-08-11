@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/CSS/userprofile.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fakebook</h1>
+        </div>
+        <div class="nav-icons">
+            <a href="./index.html"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa-solid fa-users-gear"></i></a>
+            <a href="#"><i class="fa fa-sms"></i></a>
+            <a href="#"><i class="fa fa-user"></i></a>
+                   </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Facebook">
+        </div>
+    </header>
+    <div class="edit-profile-overlay">
+        <div class="edit-profile">
+            <div class="edit-head">
+                <span>Edit Profile</span>
+            </div>
+            <div>
+            <p>Username:</p>
+            <input id="u_uid" placeholder="enter username" />
+            <p>
+                Email:
+            </p>
+            <input id="u_email" placeholder="enter email" /><br><br>
+            <button id="save_btn">Save</button><br><br>
+        </div>
+        </div>
+    </div>
+    <div class="main">
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="https://img.freepik.com/premium-vector/people-profile-graphic_24911-21373.jpg?w=740" alt="User Avatar">
+        </div><br>
+        <div class="profile-content">
+            <h1 id="h1_name">John Doe</h1><i  id="edit_btn" class="fas fa-edit"></i>
+            <p id="e_uid">@johndoe</p>
+            <div class="user-info">
+                <p>Username: <span id="username"></span></p>
+                <p>Email: <span id="email">johndoe@example.com</span></p>
+            </div>
+            <p>Web Developer | Tech Enthusiast | Blogger</p>
+        </div>
+        <div class="profile-stats">
+            <div>
+                <h3>150</h3>
+                <p>Posts</p>
+            </div>
+            <div>
+                <h3>1.2K</h3>
+                <p>Followers</p>
+            </div>
+            <div>
+                <h3>180</h3>
+                <p>Following</p>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <button class="btn-primary">Follow</button>
+            <button class="btn-secondary">Message</button>
+        </div>
+    </div>
+</div>
+    <script src="./JS/userprofile.js"></script>
+    <script src="https://kit.fontawesome.com/952d9cc6d5.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

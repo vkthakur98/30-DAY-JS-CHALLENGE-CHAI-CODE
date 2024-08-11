@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    /* background: url('https://t3.ftcdn.net/jpg/03/89/32/80/240_F_389328016_ak3iUrk15slWfEZdYL96O6eKTUyImDeC.jpg') no-repeat center center/cover; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+.background img
+{
+    height: 570px;
+    width: 400px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    backdrop-filter: blur(5px);
+} */
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    padding: 21px;
+    height: 610px;
+}
+
+.sign-in-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px 0px 0px 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.notify-dialog-box
+{
+    z-index: 1000;
+    position:absolute;
+    width: 300px;
+    background-color: rgb(255, 56, 56);
+    border-radius: 5px;
+    animation: .5s slidein linear;
+    right: 20px;
+    top:60px;
+    padding:10px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+
+@keyframes slidein {
+0%{
+    right:-200px;
+}
+
+100%
+{
+    right: 20px;
+}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sign-in-box h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sign-in-box p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width:300px;
+}
+
+.input-group ::placeholder
+{
+    color: wheat;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+    border: 1px solid #4267b2;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #365899;
+    transform: scale(1.05);
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
